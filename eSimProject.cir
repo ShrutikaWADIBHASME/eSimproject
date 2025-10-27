@@ -1,0 +1,39 @@
+* C:\Users\hp\eSim-Workspace\eSimProject\eSimProject.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/27/2025 10:00:50 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  2 6 pulse		
+v3  1 6 pulse		
+v2  ? 6 pulse		
+XU4  2 1 3 20 28 15 adc_bridge_3		
+XU5  23 28 ? d_nor		
+XU6  20 9 25 d_nor		
+XU7  9 ? 26 d_nor		
+XU8  29 28 27 d_nor		
+XU9  28 29 30 d_nand		
+XU10  29 15 21 d_nand		
+XU11  28 15 16 d_nand		
+XU12  ? 18 19 d_nand		
+XU13  19 31 32 8 dac_bridge_2		
+XU14  32 plot_v1		
+XU15  8 plot_v1		
+XU2  2 plot_v1		
+XU3  3 plot_v1		
+XU1  1 plot_v1		
+R1  ? 6 1k		
+R2  32 6 1k		
+XU16  ? 25 12 d_or		
+XU17  27 15 14 d_or		
+XU18  12 11 ? d_or		
+XU20  26 14 18 d_or		
+XU19  21 16 10 d_nand		
+XU21  30 10 31 d_nand		
+XU23  28 9 d_inverter		
+XU22  20 23 d_inverter		
+XU24  15 11 d_inverter		
+
+.end
